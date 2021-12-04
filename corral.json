@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "advent_of_code_2021",
+    "description": "Advent of Code 2021",
+    "homepage": "https://github.com/kulibali/advent_of_code_2021",
+    "documentation_url": "https://github.com/kulibali/advent_of_code_2021",
+    "license": "MIT",
+    "version": "0.0.0"
+  },
+  "packages": [
+    "advent_of_code_2021"
+  ],
+  "deps": [
+    {
+      "locator": "github.com/kulibali/kiuatan.git",
+      "version": "1.0.4"
+    }
+  ]
+}

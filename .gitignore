@@ -1,4 +1,7 @@
 .vscode/
+_corral/
+_repos/
+lock.json
 *.exe
 *.exp
 *.ilk
