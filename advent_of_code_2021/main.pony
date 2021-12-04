@@ -8,13 +8,17 @@ actor Main
   new create(env: Env) =>
     try
       run("D01P1e", "data/day_01_example.txt", Day01Part1, env, 7)?
-      run("D01P1", "data/day_01_data.txt", Day01Part1, env, 1581)?
+      run("D01P1 ", "data/day_01_data.txt", Day01Part1, env, 1581)?
       run("D01P2e", "data/day_01_example.txt", Day01Part2, env, 5)?
-      run("D01P2", "data/day_01_data.txt", Day01Part2, env, 1618)?
+      run("D01P2 ", "data/day_01_data.txt", Day01Part2, env, 1618)?
       run("D02P1e", "data/day_02_example.txt", Day02Part1, env, 150)?
-      run("D02P1", "data/day_02_data.txt", Day02Part1, env, 1762050)?
+      run("D02P1 ", "data/day_02_data.txt", Day02Part1, env, 1762050)?
       run("D02P2e", "data/day_02_example.txt", Day02Part2, env, 900)?
-      run("D02P2", "data/day_02_data.txt", Day02Part2, env, 1855892637)?
+      run("D02P2 ", "data/day_02_data.txt", Day02Part2, env, 1855892637)?
+      run("D03P1e", "data/day_03_example.txt", Day03Part1, env, 198)?
+      run("D03P1 ", "data/day_03_data.txt", Day03Part1, env, 1307354)?
+      run("D03P2e", "data/day_03_example.txt", Day03Part2, env, 230)?
+      run("D03P2 ", "data/day_03_data.txt", Day03Part2, env, 482500)?
     else
       env.exitcode(1)
     end
@@ -23,7 +27,6 @@ actor Main
     expected: I64) ?
   =>
     try
-
       let fpath = FilePath(env.root as AmbientAuth, fname)
       match OpenFile(fpath)
       | let file: File =>
